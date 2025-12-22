@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, ReactNode } from "react";
 import {
   motion,
   AnimatePresence,
@@ -8,16 +8,17 @@ import {
 } from "motion/react";
 import { cn } from "@/lib/utils";
 
+interface NavItem {
+  name: string;
+  link: string;
+  icon?: ReactNode;
+}
 
 export const FloatingNav = ({
   navItems,
   className,
 }: {
-  navItems: {
-    name: string;
-    link: string;
-    icon?: JSX.Element;
-  }[];
+  navItems: NavItem[];
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
