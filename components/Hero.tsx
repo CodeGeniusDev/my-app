@@ -20,16 +20,16 @@ const Hero = () => {
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
-      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white dark:bg-(--black-100)">
+      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center">
         <div
           className={cn(
             "absolute inset-0",
-            "[background-size:40px_40px]",
-            "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
+            "bg-size-[40px_40px]",
+            "bg-[linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+            "dark:bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
           )}
         />
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white mask-[radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
       </div>
 
       <div className="flex justify-center relative my-10 z-20">
@@ -41,9 +41,8 @@ const Hero = () => {
             | Dynamic Web Magic with Next.js |
           </h2>
           <TextGenerateEffect
-            className="text-center text-[40px]
-            md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless Experiences"
+            words="Transforming Concepts into Seamless User Experiences"
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
           <p
             className="text-center md:tracking-wider
@@ -55,10 +54,11 @@ const Hero = () => {
           <a href="#about">
             <MagicButton
               position="right"
-              title="show my work"
+              otherClasses="px-8"
+              title="Show my work"
               icon={<FaLocationArrow className="w-3 h-3" />}
             >
-              show my work
+              Show my work
             </MagicButton>
           </a>
         </div>
