@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { Spotlight } from "./ui/spotlight";
 import { cn } from "@/lib/utils";
@@ -29,7 +30,7 @@ const Hero = () => {
             "dark:bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
           )}
         />
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white mask-[radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center mask-[radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
       </div>
 
       <div className="flex justify-center relative my-10 z-20">
