@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import React from "react";
 import { Spotlight } from "./ui/spotlight";
 import { cn } from "@/lib/utils";
+import { gridItems } from "@/Data";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./ui/magic-button";
 import { FaLocationArrow } from "react-icons/fa";
@@ -30,7 +31,7 @@ const Hero = () => {
             "dark:bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
           )}
         />
-        
+
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center mask-[radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
       </div>
 
@@ -40,18 +41,18 @@ const Hero = () => {
             className="uppercase tracking-widest
             text-xs text-center text-blue-100 max-w-80"
           >
-            | Dynamic Web Magic with Next.js |
+            {gridItems[3].title}
           </h2>
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Full Stack Web Developer & UI/UX Enthusiast"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
           <p
             className="text-center md:tracking-wider
             mb-4 text-sm md:text-lg lg:text-2x1"
           >
-            I am a passionate web developer with a strong background in software
-            development and a deep understanding of the latest web technologies.
+            {gridItems[0].title} I build fast, responsive, and accessible web applications
+            using modern technologies like Next.js, React, and Tailwind CSS.
           </p>
           <a href="#about">
             <MagicButton

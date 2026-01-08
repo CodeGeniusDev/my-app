@@ -27,17 +27,18 @@ const RecentProjects = () => {
               rel="noopener noreferrer"
               className="block w-full h-full"
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[90vw] overflow-hidden h-[20vh] lg:h-[38vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-96 w-[90vw] overflow-hidden h-[34vh] lg:h-[38vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <img src="/bg.png" alt="bgimg" loading="lazy" />
                 </div>
                 <img
                   src={item.img}
                   alt="cover"
                   className="z-10 absolute bottom-0"
+                  loading="lazy"
                 />
               </div>
 
@@ -65,7 +66,12 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-1.5" />
+                      <img
+                        src={icon}
+                        alt="icon5"
+                        className="p-1.5"
+                        loading="lazy"
+                      />
                     </div>
                   ))}
                 </div>

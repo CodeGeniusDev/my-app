@@ -5,11 +5,14 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
+// ================= GRID ITEMS =================
+
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
+    title: "I work closely with clients to build great digital products.",
+    description:
+      "From idea to launch, I make sure everything is clear and on time.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -18,8 +21,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
+    title: "Flexible with time zones",
+    description: "I adjust my schedule to work smoothly with global clients",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-center",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -38,19 +41,18 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
+    title: "I love building modern and useful websites.",
+    description: "Focused on clean design and strong frontend skills.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Building a JavaScript animation library.",
+    description: "Making animations simple and smooth for developers.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,8 +61,8 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
+    title: "Want to work together?",
+    description: "Let’s build a fast and modern web app for your idea.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -69,165 +71,189 @@ export const gridItems = [
   },
 ];
 
+// ================= PROJECTS (REAL DATA) =================
+
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Personal Portfolio Website",
+    des: "My professional portfolio showcasing my projects, skills, and experience as a full-stack web developer.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://ui.earth.com",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    link: "https://abdullah-portfolio-web-eight.vercel.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "WealthX — Finance Tracker App",
+    des: "A smart finance tracking app to manage income and expenses with a clean UI and real-time insights.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://ui.yoom.com",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    link: "https://wealthx.netlify.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Decoricks Finance Tracker",
+    des: "A simple yet powerful finance manager built to help users track spending and stay organized.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://ui.aiimg.com",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    link: "https://decofin.netlify.app/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "ShopFluence — E-commerce Store",
+    des: "A modern e-commerce website built with Next.js and Tailwind, featuring smooth UI and fast performance.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://ui.apple.com",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    link: "https://shopfluencestore.vercel.app/",
   },
   {
     id: 5,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Weather Forecast App",
+    des: "A responsive weather application that shows real-time forecasts using public APIs.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://ui.apple.com",
+    iconLists: ["/git.svg", "/next.svg", "/tail.svg"],
+    link: "https://weather-app-ruby-rho-93.vercel.app/",
   },
   {
     id: 6,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Headphone Product Landing Page",
+    des: "A clean and modern landing page designed to showcase a headphones brand with engaging visuals.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://ui.apple.com",
+    iconLists: ["/next.svg", "/tail.svg", "/git.svg"],
+    link: "https://headphone-landing-page-seven.vercel.app/",
   },
 ];
+
+// ================= TESTIMONIALS =================
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Abdullah was a great experience. He built our company website exactly as we wanted — professional, modern, and user-friendly.",
+    name: "Hasnat",
+    title: "Client - Jinnah Expert Solar",
+    img: "/Hasnat.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Abdullah did an excellent job on my WordPress site. He understood my requirements clearly and delivered a clean, functional website on time.",
+    name: "Zeeshan Asif",
+    title: "Client - WordPress Website",
+    img: "/Zeeshan.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Abdullah has strong frontend skills and a great eye for design. I highly recommend him for modern web projects.",
+    name: "Zuraiz Malik",
+    title: "Client - WordPress Website",
+    img: "/Zuraiz.png",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Delivered the project on time with excellent code quality and clean design.",
+    name: "Syeda Dua",
+    title: "Client - Web & Design Services",
+    img: "/Dua.png",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Great experience working together. The landing page was delivered on time with a clean, modern, and responsive design.",
+    name: "Taaha Malik",
+    title: "Client - Landing Page",
+    img: "/Taaha.jpg",
   },
 ];
+
+// ================= COMPANIES =================
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
+    name: "Cloudinary",
     img: "/cloud.svg",
     nameImg: "/cloudName.svg",
   },
   {
     id: 2,
-    name: "appwrite",
+    name: "Appwrite",
     img: "/app.svg",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
+    name: "Hostinger",
     img: "/host.svg",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
-    name: "stream",
+    name: "Stream",
     img: "/s.svg",
     nameImg: "/streamName.svg",
   },
   {
     id: 5,
-    name: "docker.",
+    name: "Docker",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
 ];
 
+// ================= WORK EXPERIENCE =================
+
 export const workExperience = [
   {
     id: 1,
     title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    desc: "Worked on a React-based platform, improving UI components and enhancing overall user experience.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Full Stack Web Developer — Self-employed",
+    desc: "Built complete web applications using React.js and Next.js for frontend and backend, respectively, with modern tools for APIs, authentication, and data handling.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
+
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Freelance Full Stack Developer",
+    desc: "Delivered end-to-end solutions for clients, from planning and design to deployment.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
     title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    desc: "Led frontend development using modern stacks, focusing on performance, scalability, and clean UI.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
 ];
 
+// ================= SOCIAL MEDIA =================
+
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/CodeGeniusDev",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/insta.svg",
+    link: "https://www.instagram.com/codegenius.dev",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/abdullah-abbad",
+  },
+  {
+    id: 4,
+    img: "/wha.svg",
+    link: "https://wa.me/923291540015",
   },
 ];
