@@ -9,165 +9,6 @@ import { BackgroundGradientAnimation } from "@/components/ui/background-gradient
 import { GlobeDemo } from "@/components/ui/gridGlobe";
 import animationData from "../../Data/confetti.json";
 
-// Placeholder components - you'll need to create these or remove them if not needed
-// const BackgroundGradientAnimation = ({
-//   children,
-// }: {
-//   children: React.ReactNode;
-// }) => (
-//   <div className="relative w-full h-full">
-//     <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-20 rounded-2xl" />
-//     {children}
-//   </div>
-// );
-
-// const GridGlobe = () => (
-//   <div className="w-full h-full flex items-center justify-center">
-//     <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center">
-//       <FaGlobe className="w-8 h-8 text-white" />
-//     </div>
-//   </div>
-// );
-
-// Simple confetti animation data as a fallback
-// const animationData = {
-//   // Basic confetti animation data
-//   v: "5.5.7",
-//   fr: 30,
-//   ip: 0,
-//   op: 90,
-//   w: 500,
-//   h: 500,
-//   nm: "Confetti",
-//   ddd: 0,
-//   assets: [],
-//   layers: [
-//     {
-//       ddd: 0,
-//       ind: 1,
-//       ty: 4,
-//       nm: "Confetti",
-//       sr: 1,
-//       ks: {
-//         o: { a: 0, k: 100 },
-//         r: { a: 0, k: 0 },
-//         p: { a: 0, k: [250, 250, 0] },
-//         a: { a: 0, k: [0, 0, 0] },
-//         s: { a: 0, k: [100, 100, 100] },
-//       },
-//       ao: 0,
-//       shapes: [
-//         {
-//           ty: "gr",
-//           it: [
-//             {
-//               ind: 0,
-//               ty: "sh",
-//               ix: 1,
-//               ks: {
-//                 a: 0,
-//                 k: {
-//                   c: false,
-//                   v: [
-//                     [0, 0],
-//                     [100, 0],
-//                     [100, 100],
-//                     [0, 100],
-//                   ],
-//                   i: [
-//                     [0, 0],
-//                     [0, 0],
-//                     [0, 0],
-//                     [0, 0],
-//                   ],
-//                   o: [
-//                     [0, 0],
-//                     [0, 0],
-//                     [0, 0],
-//                     [0, 0],
-//                   ],
-//                 },
-//               },
-//               nm: "Confetti",
-//               mn: "ADBE Vector Shape - Group",
-//               hd: false,
-//             },
-//             {
-//               ty: "st",
-//               c: { a: 0, k: [1, 1, 1, 1] },
-//               o: { a: 0, k: 100 },
-//               w: { a: 0, k: 1 },
-//               lc: 1,
-//               lj: 1,
-//               ml: 4,
-//               bm: 0,
-//               d: [{ n: "d", nm: "d", s: 0, v: 1 }],
-//               nm: "Stroke 1",
-//               mn: "ADBE Vector Graphic - Stroke",
-//               hd: false,
-//             },
-//             {
-//               ty: "fl",
-//               c: { a: 0, k: [1, 0.5, 0.5, 1] },
-//               o: { a: 0, k: 100 },
-//               r: 1,
-//               bm: 0,
-//               nm: "Fill 1",
-//               mn: "ADBE Vector Graphic - Fill",
-//               hd: false,
-//             },
-//             {
-//               ty: "tr",
-//               p: {
-//                 a: 1,
-//                 k: [
-//                   {
-//                     i: { x: 0.833, y: 0.833 },
-//                     o: { x: 0.167, y: 0.167 },
-//                     t: 0,
-//                     s: [0, 0],
-//                   },
-//                   { t: 30, s: [100, 100] },
-//                 ],
-//               },
-//               a: { a: 0, k: [0, 0] },
-//               s: {
-//                 a: 1,
-//                 k: [
-//                   {
-//                     i: { x: [0.833, 0.833, 0.833], y: [0.833, 0.833, 0.833] },
-//                     o: { x: [0.167, 0.167, 0.167], y: [0.167, 0.167, 0.167] },
-//                     t: 0,
-//                     s: [0, 0, 100],
-//                   },
-//                   { t: 30, s: [100, 100, 100] },
-//                 ],
-//               },
-//               r: { a: 0, k: 0 },
-//               o: { a: 0, k: 100 },
-//               sk: { a: 0, k: 0 },
-//               sa: { a: 0, k: 0 },
-//               nm: "Transform",
-//             },
-//           ],
-//           nm: "Confetti",
-//           np: 3,
-//           cix: 2,
-//           bm: 0,
-//           ix: 1,
-//           mn: "ADBE Vector Group",
-//           hd: false,
-//         },
-//       ],
-//       ip: 0,
-//       op: 90,
-//       st: 0,
-//       bm: 0,
-//     },
-//   ],
-//   markers: [],
-// };
-
 export const BentoGrid = ({
   className,
   children,
@@ -291,7 +132,7 @@ export const BentoGridItem = ({
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight md:text-xs lg:text-base text-sm text-white z-10">
             {description}
           </div>
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
@@ -335,12 +176,7 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
-          {/* {id === 6 && (
-            // add background animation , remove the p tag
-            <BackgroundGradientAnimation>
-              <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-            </BackgroundGradientAnimation>
-          )} */}
+
           {id === 6 && (
             <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-2 text-center">
               <div className="relative z-50">

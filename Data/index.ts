@@ -25,7 +25,7 @@ export const gridItems = [
     description: "I adjust my schedule to work smoothly with global clients",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-center",
     imgClassName: "",
-    titleClassName: "justify-start",
+    titleClassName: "justify-start text-center items-center",
     img: "",
     spareImg: "",
   },
