@@ -1,0 +1,47 @@
+User-agent: *
+Allow: /
+
+# Sitemap location (uncomment and update when you have a sitemap)
+# Sitemap: https://codegeniusx.netlify.app/sitemap.xml
+
+# Crawl-delay: 10
+# 10 second delay between requests to be nice to the server
+
+# Block specific paths (example)
+# Disallow: /private/
+# Disallow: /admin/
+# Disallow: /api/
+
+# Allow specific files
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+
+# Block common crawl paths
+Disallow: /_next/
+Disallow: /api/
+Disallow: /_error
+Disallow: /404
+Disallow: /500
+
+# Block search engines from crawling development and staging environments
+User-agent: *
+Disallow: /*?*
+Disallow: /*&
+Disallow: /*#
+
+# Block common CMS/admin paths
+Disallow: /wp-admin/
+Disallow: /wp-content/plugins/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /xmlrpc.php
+Disallow: /feed/
+
+# Allow all other bots
+User-agent: *
+Allow: /
