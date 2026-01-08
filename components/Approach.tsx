@@ -73,7 +73,10 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/20 group/canvas-card flex text-center items-center justify-center dark:border-white/20 bg-purple-300/2 max-w-sm w-full mx-auto p-4 relative h-140"
+      onTouchStart={() => setHovered(true)}
+      onTouchEnd={() => setHovered(false)}
+      onClick={() => setHovered(!hovered)}
+      className="border border-black/20 group/canvas-card flex text-center items-center justify-center dark:border-white/20 bg-purple-300/2 max-w-sm w-full mx-auto p-4 relative h-140 touch-manipulation"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
