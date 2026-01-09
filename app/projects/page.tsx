@@ -1,22 +1,41 @@
 "use client";
 
+import { projects } from "@/Data";
+import { PinContainer } from "@/components/ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa6";
-import { projects } from "@/Data/index";
-import { PinContainer } from "./ui/3d-pin";
 import Link from "next/link";
-import MagicButton from "./ui/magic-button";
 
-const RecentProjects = () => {
-  const recentProjects = projects.slice(0, 6); // Show only first 6 projects
-
+export default function ProjectsPage() {
   return (
-    <div className="py-20" id="projects">
+    <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="mb-8">
+        <Link 
+          href="/" 
+          className="inline-flex items-center text-purple-300 hover:text-white transition-colors duration-200 text-sm md:text-base"
+        >
+          <svg 
+            className="w-4 h-4 mr-2" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M10 19l-7-7m0 0l7-7m-7 7h18" 
+            />
+          </svg>
+          Back to Home
+        </Link>
+      </div>
       <h1 className="heading">
-        A small selection of {` `}
-        <span className="text-purple-300">recent projects</span>
+        All {` `}
+        <span className="text-purple-300">projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {recentProjects.map((item) => (
+        {projects.map((item) => (
           <div
             className="lg:min-h-130 h-100 flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
@@ -89,21 +108,6 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
-
-      <div className="flex justify-center mt-12">
-        <Link href="/projects">
-          <MagicButton
-            position="right"
-            otherClasses="px-8"
-            title="View all projects"
-            icon={<FaLocationArrow className="w-3 h-3" />}
-          >
-            View all projects
-          </MagicButton>
-        </Link>
-      </div>
     </div>
   );
-};
-
-export default RecentProjects;
+}
