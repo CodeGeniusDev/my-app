@@ -25,12 +25,19 @@ const categorizedProjects = {
   ),
   ecommerce: projects.filter(
     (project) =>
-      project.title.toLowerCase().includes("shop") ||
-      project.title.toLowerCase().includes("store") ||
-      project.title.toLowerCase().includes("e-comm") ||
-      project.title.toLowerCase().includes("ecomm") ||
-      project.title.toLowerCase().includes("market") ||
-      project.title.toLowerCase().includes("decoricks")
+      project.id !== 3 &&
+      (
+        project.title.toLowerCase().includes("shop") ||
+        project.title.toLowerCase().includes("store") ||
+        project.title.toLowerCase().includes("e-comm") ||
+        project.title.toLowerCase().includes("ecomm") ||
+        project.title.toLowerCase().includes("market") ||
+        project.title.toLowerCase().includes("headphone") ||
+        project.title.toLowerCase().includes("decoricks") ||
+        project.id === 6 ||
+        project.id === 17 ||
+        project.id === 21
+      )
   ),
   business: projects.filter(
     (project) =>
@@ -38,13 +45,18 @@ const categorizedProjects = {
       project.title.toLowerCase().includes("crm") ||
       project.title.toLowerCase().includes("finance") ||
       project.title.toLowerCase().includes("management") ||
-      project.title.toLowerCase().includes("decoricks")
+      project.title.toLowerCase().includes("decoricks") ||
+      project.id === 12 ||
+      project.id === 13
   ),
   productivity: projects.filter(
     (project) =>
       project.title.toLowerCase().includes("tracker") ||
-      project.title.toLowerCase().includes("task") ||
-      project.title.toLowerCase().includes("productivity")
+      project.title.toLowerCase().includes("productivity") ||
+      project.id === 20 ||
+      project.id === 18 ||
+      project.id === 8 ||
+      project.id === 5
   ),
   entertainment: projects.filter(
     (project) =>
@@ -101,10 +113,9 @@ export default function ProjectsPage() {
             >
               {category.name}
               <span className="bg-gray-800 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                {
-                  categorizedProjects[category.id as keyof typeof categorizedProjects]
-                    ?.length || 0
-                }
+                {categorizedProjects[
+                  category.id as keyof typeof categorizedProjects
+                ]?.length || 0}
               </span>
             </button>
           ))}
