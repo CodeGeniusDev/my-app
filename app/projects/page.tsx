@@ -5,6 +5,7 @@ import { projects } from "@/Data";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa6";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 // Define project categories
 const categories = [
@@ -58,8 +59,8 @@ export default function ProjectsPage() {
     [];
 
   return (
-    <div className="py-20 px-4">
-      <div className="mb-8 px-14">
+    <div className="pt-20 px-5 sm:px-20 overflow-hidden mx-auto bg-(--black-100)">
+      <div className="mb-8 px-4">
         <Link
           href="/"
           className="inline-flex items-center text-purple-300 hover:text-white transition-colors duration-200 text-sm md:text-base"
@@ -106,7 +107,7 @@ export default function ProjectsPage() {
         {filteredProjects.length > 0 ? (
           filteredProjects.map((item) => (
             <div
-              className="g:min-h-130 h-115 flex items-center justify-center sm:w-96 w-[80vw]"
+              className="lg:min-h-130 h-115 flex items-center justify-center sm:w-96 w-[80vw]"
               key={item.id}
             >
               <PinContainer
@@ -188,6 +189,9 @@ export default function ProjectsPage() {
             </button>
           </div>
         )}
+      </div>
+      <div className="mt-12">
+        <Footer />
       </div>
     </div>
   );
