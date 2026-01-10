@@ -4,6 +4,7 @@ import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import MagicButton from "@/components/ui/magic-button";
+import { cn } from "@/lib/utils";
 
 export default function CanvasRevealEffectDemo() {
   return (
@@ -97,14 +98,29 @@ const Card = ({
       </AnimatePresence>
 
       <div className="relative z-20 flex flex-col items-center justify-center">
-        <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full mx-auto flex items-center justify-center">
+        <div
+          className={cn(
+            "text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full mx-auto flex items-center justify-center",
+            hovered && "-translate-y-4 opacity-0"
+          )}
+        >
           {icon}
         </div>
         <div className="-mt-15 px-4">
-          <h2 className="dark:text-white text-center text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+          <h2
+            className={cn(
+              "dark:text-white text-center text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200",
+              hovered ? "opacity-100 -translate-y-2 text-white" : "opacity-0"
+            )}
+          >
             {title}
           </h2>
-          <p className="text-sm opacity-0 text-center group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+          <p
+            className={cn(
+              "text-sm opacity-0 text-center group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200",
+              hovered ? "opacity-100 -translate-y-2 text-white" : "opacity-0"
+            )}
+          >
             {description}
           </p>
         </div>
