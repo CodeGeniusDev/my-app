@@ -6,6 +6,7 @@ import { gridItems } from "@/Data";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./ui/magic-button";
 import { FaLocationArrow } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
   return (
@@ -52,19 +53,32 @@ const Hero = () => {
             className="text-center md:tracking-wider
             mb-4 text-sm md:text-lg lg:text-2x1"
           >
-            {gridItems[0].title} I build fast, responsive, and accessible web applications
-            using modern technologies like Next.js, React, and Tailwind CSS.
+            {gridItems[0].title} I build fast, responsive, and accessible web
+            applications using modern technologies like Next.js, React, and
+            Tailwind CSS.
           </p>
-          <a href="#about">
-            <MagicButton
-              position="right"
-              otherClasses="px-8"
-              title="Show my work"
-              icon={<FaLocationArrow className="w-3 h-3" />}
-            >
-              Show my work
-            </MagicButton>
-          </a>
+          <div className="flex gap-4">
+            <a href="#projects">
+              <MagicButton
+                position="right"
+                otherClasses="px-8"
+                title="View my work"
+                icon={<FaLocationArrow className="w-3 h-3" />}
+              >
+                View my work
+              </MagicButton>
+            </a>
+            {/* <a href="#contact">
+              <MagicButton
+                position="right"
+                otherClasses="px-8"
+                title="Hire me"
+                icon={<MdEmail className="w-4 h-4" />}
+              >
+                Hire me
+              </MagicButton>
+            </a> */}
+          </div>
         </div>
       </div>
     </div>
