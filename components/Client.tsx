@@ -15,7 +15,7 @@ const Client = () => {
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
-            speed="normal"
+            speed="slow"
           />
 
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg: mt-10">
