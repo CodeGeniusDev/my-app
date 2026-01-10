@@ -74,8 +74,6 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      onTouchStart={() => setHovered(true)}
-      onTouchEnd={() => setHovered(false)}
       onClick={() => setHovered(!hovered)}
       style={{ cursor: "pointer" }}
       className="border border-black/20 group/canvas-card flex text-center items-center justify-center dark:border-white/20 bg-purple-300/2 max-w-sm w-full mx-auto p-4 relative h-140 touch-manipulation"
