@@ -29,14 +29,16 @@ const categorizedProjects = {
       project.title.toLowerCase().includes("store") ||
       project.title.toLowerCase().includes("e-comm") ||
       project.title.toLowerCase().includes("ecomm") ||
-      project.title.toLowerCase().includes("market")
+      project.title.toLowerCase().includes("market") ||
+      project.title.toLowerCase().includes("decoricks")
   ),
   business: projects.filter(
     (project) =>
       project.title.toLowerCase().includes("business") ||
       project.title.toLowerCase().includes("crm") ||
       project.title.toLowerCase().includes("finance") ||
-      project.title.toLowerCase().includes("management")
+      project.title.toLowerCase().includes("management") ||
+      project.title.toLowerCase().includes("decoricks")
   ),
   productivity: projects.filter(
     (project) =>
@@ -57,7 +59,6 @@ export default function ProjectsPage() {
   const filteredProjects =
     categorizedProjects[activeCategory as keyof typeof categorizedProjects] ||
     [];
-
   return (
     <div className="pt-20 px-5 sm:px-20 overflow-hidden mx-auto bg-(--black-100)">
       <div className="mb-8 px-4">
@@ -92,13 +93,19 @@ export default function ProjectsPage() {
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`px-4 py-2 rounded-full text-sm md:text-base transition-all duration-300 cursor-pointer ${
+              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm md:text-base transition-all duration-300 cursor-pointer ${
                 activeCategory === category.id
                   ? "bg-purple-900/30 text-white border border-purple-300"
-                  : "text-gray-400 hover:text-white hover:bg-gray-800/50"
+                  : "text-gray-400 hover:text-white hover:bg-gray-800/50 border border-gray-700"
               }`}
             >
               {category.name}
+              <span className="bg-gray-800 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                {
+                  categorizedProjects[category.id as keyof typeof categorizedProjects]
+                    ?.length || 0
+                }
+              </span>
             </button>
           ))}
         </div>

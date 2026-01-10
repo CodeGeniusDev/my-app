@@ -192,7 +192,7 @@ export const projects = [
     des: "Interactive web-based puzzle games built with modern web technologies for engaging user experience.",
     img: "/projects/PuzzleGame.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: "https://abdullah-portfolio-tau.vercel.app/assets/Web-game.html/",
+    link: "https://abdullah-portfolio-tau.vercel.app/assets/Web-game.html",
   },
   {
     id: 16,
@@ -248,7 +248,7 @@ export const projects = [
     des: "First iteration of my personal portfolio with a clean and minimal design approach.",
     img: "/projects/Portfolio2.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-    link: "https://abdullah-portfolio-tau.vercel.app/",
+    link: "https://portfolio-3-mu-green.vercel.app/",
   },
   {
     id: 23,
@@ -256,7 +256,7 @@ export const projects = [
     des: "Second version featuring enhanced UI/UX and improved project showcase layout.",
     img: "/projects/Portfolio3.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-    link: "https://portfolio-3-mu-green.vercel.app/",
+    link: "https://abdullah-portfolio-tau.vercel.app/",
   },
   {
     id: 24,
@@ -273,6 +273,14 @@ export const projects = [
     img: "/projects/BusinessNexus.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
     link: "https://business-nexus-bice.vercel.app/",
+  },
+  {
+    id: 26,
+    title: "Decoricks",
+    des: "Elegant home decor and interior design platform showcasing modern furniture and home accessories.",
+    img: "/projects/Decoricks.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    link: "https://decoricks.com/",
   },
 ];
 
