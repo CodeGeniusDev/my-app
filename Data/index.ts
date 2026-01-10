@@ -12,7 +12,7 @@ export const gridItems = [
     id: 1,
     title: "I work closely with clients to build great digital products.",
     description:
-      "From idea to launch, I make sure everything is clear and on time.",
+      "From idea to launch, I ensure clarity, quality, and on-time delivery.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -22,7 +22,7 @@ export const gridItems = [
   {
     id: 2,
     title: "Flexible with time zones",
-    description: "I adjust my schedule to work smoothly with global clients",
+    description: "Comfortable working with clients across different regions.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-center",
     imgClassName: "",
     titleClassName: "justify-start text-center items-center",
@@ -32,7 +32,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "I constantly try to improve",
+    description: "Always improving with tech.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -42,7 +42,7 @@ export const gridItems = [
   {
     id: 4,
     title: "I love building modern and useful websites.",
-    description: "Focused on clean design and strong frontend skills.",
+    description: "Focused on clean design and strong frontend experiences.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -51,8 +51,8 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Building a JavaScript animation library.",
-    description: "Making animations simple and smooth for developers.",
+    title: "Always learning new technologies.",
+    description: "Improving my skills with every project.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -61,8 +61,8 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
-    description: "Let’s build together",
+    title: "Want to start a project together?",
+    description: "Let’s build something great.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
