@@ -41,7 +41,8 @@ const Hero = () => {
             className="uppercase tracking-widest
             text-xs text-center text-blue-100 max-w-80"
           >
-            {gridItems[3].title}
+            {/* {gridItems[3].title} */}
+            HEY, I’M ABDULLAH 👋
           </h2>
           <TextGenerateEffect
             words="Full Stack Web Developer & UI/UX Enthusiast"

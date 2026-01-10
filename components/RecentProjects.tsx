@@ -7,10 +7,7 @@ import Link from "next/link";
 import MagicButton from "./ui/magic-button";
 
 const RecentProjects = () => {
-  // Pick 6 random projects on each render
-  const recentProjects = [...projects]
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 6);
+  const recentProjects = projects.slice(0, 6);
 
   return (
     <div className="py-20" id="projects">

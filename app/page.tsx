@@ -1,12 +1,22 @@
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
-import Client from "@/components/Client";
-import Experience from "@/components/Experience";
 import { navItems } from "@/Data";
-import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
+
+const Client = dynamic(() => import("@/components/Client"), {
+  loading: () => null,
+});
+
+const Experience = dynamic(() => import("@/components/Experience"), {
+  loading: () => null,
+});
+
+const Approach = dynamic(() => import("@/components/Approach"), {
+  loading: () => null,
+});
 
 export default function Home() {
   return (
