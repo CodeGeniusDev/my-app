@@ -26,8 +26,7 @@ const categorizedProjects = {
   ecommerce: projects.filter(
     (project) =>
       project.id !== 3 &&
-      (
-        project.title.toLowerCase().includes("shop") ||
+      (project.title.toLowerCase().includes("shop") ||
         project.title.toLowerCase().includes("store") ||
         project.title.toLowerCase().includes("e-comm") ||
         project.title.toLowerCase().includes("ecomm") ||
@@ -36,8 +35,7 @@ const categorizedProjects = {
         project.title.toLowerCase().includes("decoricks") ||
         project.id === 6 ||
         project.id === 17 ||
-        project.id === 21
-      )
+        project.id === 21)
   ),
   business: projects.filter(
     (project) =>
@@ -165,15 +163,12 @@ export default function ProjectsPage() {
                   {item.des}
                 </p>
 
-                <div className="flex items-center justify-between mt-7 mb-3">
-                  <div className="flex items-center">
+                <div className="flex items-center justify-between mt-7">
+                  <div className="flex items-center -space-x-2">
                     {item.iconLists.map((icon, index) => (
                       <div
                         key={index}
                         className="border border-white/20 rounded-full bg-black lg:w-9 lg:h-9 w-7 h-7 flex justify-center items-center"
-                        style={{
-                          transform: `translateX(-${5 * index + 2}px)`,
-                        }}
                       >
                         <img
                           src={icon}
@@ -184,6 +179,7 @@ export default function ProjectsPage() {
                       </div>
                     ))}
                   </div>
+
                   <div className="flex justify-center items-center">
                     <p className="flex lg:text-lg md:text-sm text-sm text-purple-300">
                       Check Live Site

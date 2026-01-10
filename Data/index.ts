@@ -79,7 +79,14 @@ export const projects = [
     title: "Personal Portfolio Website",
     des: "My professional portfolio showcasing my projects, skills, and experience as a full-stack web developer.",
     img: "/projects/Portfolio1.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: [
+      "/html.svg",
+      "/css.svg",
+      "/js.svg",
+      "/gsap.svg",
+      "/vs.svg",
+      "/anal.svg",
+    ],
     link: "https://abdullah-portfolio-web-eight.vercel.app/",
   },
   {
@@ -87,7 +94,7 @@ export const projects = [
     title: "WealthX — Finance Tracker App",
     des: "A smart finance tracking app to manage income and expenses with a clean UI and real-time insights.",
     img: "/projects/FinanceTracker.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/bolt.svg", "/anal.svg"],
     link: "https://wealthx.netlify.app/",
   },
   {
@@ -95,7 +102,7 @@ export const projects = [
     title: "Decoricks Finance Tracker",
     des: "A simple yet powerful finance manager built to help users track spending and stay organized.",
     img: "/projects/DecoricksFinance.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/lovea.svg"],
     link: "https://decofin.netlify.app/",
   },
   {
@@ -103,7 +110,14 @@ export const projects = [
     title: "ShopFluence — E-commerce Store",
     des: "A modern e-commerce website built with Next.js and Tailwind, featuring smooth UI and fast performance.",
     img: "/projects/ShopFluence.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/npm.svg",
+      "/fig.svg",
+      "/wind.svg",
+    ],
     link: "https://shopfluencestore.vercel.app/",
   },
   {
@@ -111,7 +125,7 @@ export const projects = [
     title: "Weather Forecast App",
     des: "A responsive weather application that shows real-time forecasts using public APIs.",
     img: "/projects/WeatherApp.png",
-    iconLists: ["/git.svg", "/next.svg", "/tail.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/vs.svg"],
     link: "https://weather-app-ruby-rho-93.vercel.app/",
   },
   {
@@ -119,7 +133,7 @@ export const projects = [
     title: "Headphone Product Landing Page",
     des: "A clean and modern landing page designed to showcase a headphones brand with engaging visuals.",
     img: "/projects/Headphones.png",
-    iconLists: ["/next.svg", "/tail.svg", "/git.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/vs.svg"],
     link: "https://headphone-landing-page-seven.vercel.app/",
   },
   {
@@ -127,7 +141,14 @@ export const projects = [
     title: "Berry N Bloom E-commerce",
     des: "An elegant online store for premium beauty and skincare products with a focus on user experience.",
     img: "/projects/BerryNBloom.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/gsap.svg",
+      "/supab.svg",
+      "/npm.svg",
+      "/wind.svg",
+    ],
     link: "https://berrynbloom.netlify.app/",
   },
   {
@@ -135,7 +156,7 @@ export const projects = [
     title: "Binghatti Properties",
     des: "A luxury real estate website showcasing premium properties with immersive visuals and property listings.",
     img: "/projects/Binghatti.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/npm.svg", "/wind.svg"],
     link: "https://demobinghatti.netlify.app",
   },
   {
@@ -143,7 +164,7 @@ export const projects = [
     title: "Business Nexus CRM",
     des: "Comprehensive customer relationship management system for businesses to manage clients and sales.",
     img: "/projects/CRM.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/wordp.svg", "/anal.svg"],
     link: "https://commercialpropertymanagement.pk",
   },
   {
@@ -151,7 +172,7 @@ export const projects = [
     title: "Design Market UI Kit",
     des: "A modern UI component library for designers and developers to build beautiful interfaces faster.",
     img: "/projects/DesignMarket.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/npm.svg", "/wind.svg"],
     link: "https://design-market.netlify.app/",
   },
   {
@@ -159,7 +180,7 @@ export const projects = [
     title: "Dry Fruits E-commerce",
     des: "Specialty store for premium dry fruits and nuts with an intuitive shopping experience.",
     img: "/projects/DryFruits.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/wordp.svg", "/anal.svg"],
     link: "https://taenterprises.com.pk/",
   },
   {
@@ -167,7 +188,15 @@ export const projects = [
     title: "JX Solar Solutions",
     des: "Website for a solar energy company showcasing their services and sustainable energy solutions.",
     img: "/projects/JXSolar.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/node.svg",
+      "/npm.svg",
+      "/wind.svg",
+      "/anal.svg",
+    ],
     link: "https://jx-solar.netlify.app/",
   },
   {
@@ -175,7 +204,15 @@ export const projects = [
     title: "MyScheme - Task Manager",
     des: "Productivity app for managing daily tasks, projects, and deadlines with a clean interface.",
     img: "/projects/MyScheme.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/node.svg",
+      "/mongo.svg",
+      "/post.svg",
+      "/wind.svg",
+    ],
     link: "https://my-scheme.netlify.app/",
   },
   {
@@ -183,7 +220,14 @@ export const projects = [
     title: "Project Tracker Pro",
     des: "Web application for teams to track project progress, tasks, and deadlines in real-time.",
     img: "/projects/ProjectTracker.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/npm.svg",
+      "/lovea.svg",
+      "/anal.svg",
+    ],
     link: "https://localtrack.netlify.app/",
   },
   {
@@ -191,7 +235,7 @@ export const projects = [
     title: "Puzzle Game Collection",
     des: "Interactive web-based puzzle games built with modern web technologies for engaging user experience.",
     img: "/projects/PuzzleGame.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/vs.svg"],
     link: "https://abdullah-portfolio-tau.vercel.app/assets/Web-game.html",
   },
   {
@@ -199,7 +243,7 @@ export const projects = [
     title: "Quiz Master App",
     des: "Interactive quiz application with various categories and real-time scoring system.",
     img: "/projects/QuizApp.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/vs.svg"],
     link: "https://scripters-app.netlify.app/",
   },
   {
@@ -207,7 +251,7 @@ export const projects = [
     title: "SeaFood Restaurant",
     des: "Modern restaurant website with online ordering system and menu showcase for seafood lovers.",
     img: "/projects/SeaFood.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/npm.svg", "/bolt.svg"],
     link: "https://demo-sea-food.netlify.app/",
   },
   {
@@ -215,7 +259,7 @@ export const projects = [
     title: "Spider Web Design",
     des: "Creative web design agency portfolio showcasing modern and innovative website designs.",
     img: "/projects/SpiderWeb.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/three.svg", "/vs.svg"],
     link: "https://spider-web-snowy.vercel.app/",
   },
   {
@@ -223,7 +267,14 @@ export const projects = [
     title: "TrueFocus - Productivity App",
     des: "Minimalist productivity app designed to help users focus and manage their time effectively.",
     img: "/projects/TrueFocus.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/supab.svg",
+      "/npm.svg",
+      "/bolt.svg",
+    ],
     link: "https://truefocus.netlify.app/",
   },
   {
@@ -231,7 +282,7 @@ export const projects = [
     title: "VideoHub - Video Platform",
     des: "Modern video sharing platform with user profiles, comments, and content discovery features.",
     img: "/projects/VideoHub.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/npm.svg", "/bolt.svg"],
     link: "https://videohubpro.netlify.app/",
   },
   {
@@ -239,7 +290,7 @@ export const projects = [
     title: "Luxury Watches Collection",
     des: "Elegant e-commerce platform for premium watches with high-quality product showcases.",
     img: "/projects/Watches.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/vs.svg"],
     link: "https://watch-web-pied.vercel.app/",
   },
   {
@@ -247,7 +298,7 @@ export const projects = [
     title: "Portfolio Design V1",
     des: "First iteration of my personal portfolio with a clean and minimal design approach.",
     img: "/projects/Portfolio2.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/vs.svg"],
     link: "https://portfolio-3-mu-green.vercel.app/",
   },
   {
@@ -255,7 +306,7 @@ export const projects = [
     title: "Portfolio Design V2",
     des: "Second version featuring enhanced UI/UX and improved project showcase layout.",
     img: "/projects/Portfolio3.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/vs.svg"],
     link: "https://abdullah-portfolio-tau.vercel.app/",
   },
   {
@@ -263,7 +314,7 @@ export const projects = [
     title: "Portfolio Design V3",
     des: "Latest portfolio iteration with modern animations and interactive elements.",
     img: "/projects/Portfolio4.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/vs.svg"],
     link: "https://portfolio-1-three-pink.vercel.app/",
   },
   {
@@ -271,7 +322,7 @@ export const projects = [
     title: "Business Nexus Pro",
     des: "Advanced business management solution with analytics and team collaboration features.",
     img: "/projects/BusinessNexus.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/npm.svg", "/bolt.svg"],
     link: "https://business-nexus-bice.vercel.app/",
   },
   {
@@ -279,7 +330,7 @@ export const projects = [
     title: "Decoricks",
     des: "Elegant home decor and interior design platform showcasing modern furniture and home accessories.",
     img: "/projects/Decoricks.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/shop.svg", "/anal.svg"],
     link: "https://decoricks.com/",
   },
 ];

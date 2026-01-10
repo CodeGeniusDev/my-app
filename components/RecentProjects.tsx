@@ -7,7 +7,10 @@ import Link from "next/link";
 import MagicButton from "./ui/magic-button";
 
 const RecentProjects = () => {
-  const recentProjects = projects.slice(0, 6); // Show only first 6 projects
+  // Pick 6 random projects on each render
+  const recentProjects = [...projects]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 6);
 
   return (
     <div className="py-20" id="projects">
@@ -58,15 +61,15 @@ const RecentProjects = () => {
                 {item.des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
+              <div className="flex items-center justify-between mt-7">
+                <div className="flex items-center -space-x-2">
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
                       className="border border-white/20 rounded-full bg-black lg:w-9 lg:h-9 w-7 h-7 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
+                      // style={{
+                      //   transform: `translateX(-${5 * index + 2}px)`,
+                      // }}
                     >
                       <img
                         src={icon}
