@@ -58,8 +58,8 @@ export default function ProjectsPage() {
     [];
 
   return (
-    <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="mb-8">
+    <div className="py-20 px-4">
+      <div className="mb-8 px-14">
         <Link
           href="/"
           className="inline-flex items-center text-purple-300 hover:text-white transition-colors duration-200 text-sm md:text-base"
@@ -102,11 +102,11 @@ export default function ProjectsPage() {
           ))}
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-6">
+      <div className="flex flex-wrap items-center justify-center py-4 gap-14 mt-10">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((item) => (
             <div
-              className="lg:min-h-130 h-100 flex items-center justify-center sm:w-96 w-[80vw]"
+              className="g:min-h-130 h-115 flex items-center justify-center sm:w-96 w-[80vw]"
               key={item.id}
             >
               <PinContainer
@@ -117,7 +117,7 @@ export default function ProjectsPage() {
                 rel="noopener noreferrer"
                 className="block w-full h-full"
               >
-                <div className="relative flex items-center justify-center sm:w-96 w-[90vw] overflow-hidden h-[38vh] lg:h-[38vh] mb-10">
+                <div className="relative flex items-center justify-center sm:w-96 w-[90vw] overflow-hidden h-full mb-10">
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}
@@ -137,7 +137,7 @@ export default function ProjectsPage() {
                 </h1>
 
                 <p
-                  className="lg:text-lg lg:font-normal font-light text-sm line-clamp-2"
+                  className="lg:text-md lg:font-normal font-light text-sm line-clamp-2"
                   style={{
                     color: "#BEC1DD",
                     margin: "1vh 0",
@@ -165,10 +165,12 @@ export default function ProjectsPage() {
                       </div>
                     ))}
                   </div>
-                </div>
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-lg md:text-sm text-sm text-purple-300"></p>
+                  <div className="flex justify-center items-center">
+                    <p className="flex lg:text-lg md:text-sm text-sm text-purple-300">
+                      Check Live Site
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </div>
                 </div>
               </PinContainer>
             </div>

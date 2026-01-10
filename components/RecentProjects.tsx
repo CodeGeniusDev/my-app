@@ -15,10 +15,10 @@ const RecentProjects = () => {
         A small selection of {` `}
         <span className="text-purple-300">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center py-4 gap-14 mt-10">
         {recentProjects.map((item) => (
           <div
-            className="lg:min-h-130 h-100 flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-130 h-115 flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer
@@ -29,7 +29,7 @@ const RecentProjects = () => {
               rel="noopener noreferrer"
               className="block w-full h-full"
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[90vw] overflow-hidden h-[38vh] lg:h-[38vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-96 w-[90vw] overflow-hidden h-full mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}

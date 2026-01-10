@@ -181,7 +181,7 @@ export const BentoGridItem = ({
             <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-2 text-center">
               <div className="relative z-50">
                 <MagicButton
-                  title="Copy my email address"
+                  title="Copy my email"
                   icon={<IoCopyOutline />}
                   position="left"
                   otherClasses="!bg-[#161a31]"
@@ -189,7 +189,7 @@ export const BentoGridItem = ({
                 >
                   {copied ? (
                     <>
-                      <span>Email is Copied!</span>
+                      <span>Copied!</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -206,7 +206,7 @@ export const BentoGridItem = ({
                       </svg>
                     </>
                   ) : (
-                    "Copy my email address"
+                    "Copy my email"
                   )}
                 </MagicButton>
                 {copied && (
